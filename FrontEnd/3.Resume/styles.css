@@ -1,25 +1,61 @@
+body {
+  font-family: Montserrat;
+  color: #46527a;
+}
 legend {
   text-align: center;
   display: flex;
   flex-direction: column;
 }
+
 fieldset {
+  border-color: #46527a;
+  border-radius: 10px;
   display: flex;
   margin-left: auto;
   margin-right: auto;
-  width: 70%;
+  width: 50%;
   justify-content: space-around;
 }
-body {
-  font-family: Roboto;
+
+.Title {
+  font-size: 20px;
+  margin-bottom: 0%;
+}
+
+.JobPosition {
+  font-size: 20px;
+  margin-top: 5%;
+}
+
+.JobCompany {
+  font-size: 22px;
+  font-weight: 400;
 }
 .name {
   margin: 0px;
-  padding: 0px;
+  padding-left: 1em;
+  padding-right: 1em;
+  font-weight: 500;
 }
+
 .position {
   margin-top: 0px;
+  font-weight: 300;
 }
+
 hr {
-  border-color: #0d1137;
+  border-color: #46527a;
+  width: 5px;
+  fill: #46527a;
+  background-color: #46527a;
+  border-radius: 15px;
+}
+
+.column {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.WorkExperience {
+  margin-bottom: 100px;
 }
