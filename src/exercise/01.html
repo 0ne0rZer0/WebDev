@@ -1,5 +1,15 @@
 <!-- Basic JavaScript-rendered Hello World -->
 <!-- http://localhost:3000/isolated/exercise/01.html -->
+<html>
+  <body>
+    <script type="module">
+      var body = document.querySelector('body')
+      var newElement = document.createElement('div')
+      newElement.textContent = 'Hello World!'
+      body.appendChild(newElement)
+    </script>
+  </body>
+</html>
 
 <!-- 🐨 Create (in HTML) a <body> with a <div> with the id of "root" -->
 <!-- 🐨 Then create a <script type="module"> for your JavaScript -->
