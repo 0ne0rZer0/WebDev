@@ -1,0 +1,74 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: visible;
+  background: #fff;
+  color: #333;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.grid-item {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+}
+
+.selected {
+  background-color: #dd1a4b;
+}
+.selected:hover {
+  background-color: #f4a6ba;
+}
+.notselected {
+  background-color: #2e2e2e;
+}
+.notselected:hover {
+  background-color: #a7a7a7;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 0px;
+  /* grid-auto-flow: row; */
+  grid-template-areas:
+    ". . . . . . . . . . . . . . . . . . . ."
+    ". . . . . . . . . . . . . . . . . . . ."
+    ". . . . . . . . . . . . . . . . . . . ."
+    ". . . . . . . . . . . . . . . . . . . ."
+    ". . . . . . . . . . . . . . . . . . . ."
+    ". . . . . . . . . . . . . . . . . . . ."
+    ". . . . . . . . . . . . . . . . . . . ."
+    ". . . . . . . . . . . . . . . . . . . ."
+    ". . . . . . . . . . . . . . . . . . . ."
+    ". . . . . . . . . . . . . . . . . . . ."
+    ". . . . . . . . . . . . . . . . . . . ."
+    ". . . . . . . . . . . . . . . . . . . ."
+    ". . . . . . . . . . . . . . . . . . . ."
+    ". . . . . . . . . . . . . . . . . . . ."
+    ". . . . . . . . . . . . . . . . . . . ."
+    ". . . . . . . . . . . . . . . . . . . ."
+    ". . . . . . . . . . . . . . . . . . . ."
+    ". . . . . . . . . . . . . . . . . . . ."
+    ". . . . . . . . . . . . . . . . . . . ."
+    ". . . . . . . . . . . . . . . . . . . .";
+}
