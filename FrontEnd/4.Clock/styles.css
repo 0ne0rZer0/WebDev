@@ -1,0 +1,111 @@
+body {
+  background-color: #1b1e23;
+}
+section {
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  max-width: 100%;
+  max-height: 100%;
+  overflow: hidden;
+}
+.clock {
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  border: 1px solid #366873;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.centerdot2 {
+  background-color: #b98c0423;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 46%;
+}
+.centerdot {
+  background-color: #f2c50c;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  z-index: 9;
+}
+.indicator {
+  width: 5px;
+  position: relative;
+  height: 1px;
+  color: white;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+#right {
+  left: 39%;
+}
+#top {
+  right: 21%;
+  bottom: 49%;
+  transform: rotate(90deg);
+}
+#left {
+  right: 93%;
+}
+#bottom {
+  top: 49%;
+  right: 33%;
+  transform: rotate(90deg);
+}
+
+.hour,
+.minute,
+.second {
+  position: absolute;
+  left: 50%;
+  border-radius: 5px;
+}
+.hour {
+  width: 120px;
+  border: 1%;
+  border-color: #f4eed7;
+  background-color: #f4eed7;
+  height: 0.5%;
+  transform-origin: left;
+  animation: rotate 43200s infinite linear;
+}
+.minute {
+  width: 160px;
+  background-color: #bebaaa;
+  border: 1%;
+  border-color: #bebaaa;
+  height: 0.2%;
+  transform-origin: left;
+  animation: rotate 3600s infinite linear;
+}
+.second {
+  width: 190px;
+  background-color: #4b9aaa;
+  border-color: #4b9aaa;
+  border: 1%;
+  height: 0.05%;
+  transform-origin: left;
+  animation: rotate 60s infinite linear;
+}
+
+@keyframes rotate {
+  to {
+    transform: rotateZ(360deg);
+  }
+}

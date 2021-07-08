@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <div>
   <h1 align="center"><a href="https://epicreact.dev/fundamentals">React Fundamentals 🚀 EpicReact.Dev</a></h1>
   <strong>
@@ -270,3 +271,7 @@ Thank you! https://kcd.im/rf-ws-feedback
 [mac-path]: http://stackoverflow.com/a/24322978/971592
 [issue]: https://github.com/kentcdodds/react-fundamentals/issues/new
 <!-- prettier-ignore-end -->
+=======
+# WebDev
+Learning Web Development by Projects
+>>>>>>> fa8d415fcc2f75e34297b2a660ea4c57ebd0ddcd
