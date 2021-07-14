@@ -96,7 +96,6 @@ nav {
   background-color: yellow;
   height: 100vh;
 }
-
 .ticket {
   display: flex;
   justify-content: center;
@@ -119,7 +118,7 @@ nav {
   background-color: white;
 }
 .ticketSeperator {
-  width: 95%;
+  width: 94%;
   height: 0px;
   /* padding: 0%; */
   background-color: white;
@@ -146,53 +145,48 @@ nav {
   /* z-index: 10; */
   position: relative;
   content: "";
-  width: 1em;
-  height: 1em;
+  width: 2rem;
+  height: 2rem;
   background: #3343c2;
   border-radius: 50%;
   /* left: -0.5em; */
   /* top: -0.5em; */
-  bottom: 1vh;
+  bottom: 15px;
   /* right: -0.5em; */
 }
 .ticketBottom:before {
   /* justify-self: flex-start; */
-  left: -1vh;
-  bottom: 1vh;
-  z-index: 10;
+  left: -19.52px;
   /* top: -0.4em; */
   /* left: 0.4em; */
   /* right: 6.1em; */
 }
 .ticketBottom:after {
-  right: -1vh;
-  z-index: 10;
+  right: -19.52px;
 }
 .ticketTop:before,
 .ticketTop:after {
   /* z-index: 10; */
   position: relative;
   content: "";
-  width: 1em;
-  height: 1em;
+  width: 2rem;
+  height: 2rem;
   background: #3343c2;
   border-radius: 50%;
   /* left: -0.5em; */
   /* top: -0.5em; */
-  top: 95%;
+  top: 92%;
   /* right: -0.5em; */
 }
 .ticketTop:before {
   /* justify-self: flex-start; */
-  left: -1vh;
-  z-index: 10;
+  left: -20px;
   /* top: -0.4em; */
   /* left: 0.4em; */
   /* right: 6.1em; */
 }
 .ticketTop:after {
-  right: -1vh;
-  z-index: 10;
+  right: -20px;
 }
 
 .user {
