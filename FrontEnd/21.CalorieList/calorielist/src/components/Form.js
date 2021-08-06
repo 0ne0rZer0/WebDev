@@ -1,8 +1,8 @@
 import Button from "./Button";
-import Input from "./Input";
 import Header from "./Header";
 import React from "react";
 import { useState } from "react";
+import "./Form.css";
 export default function Form() {
   const [values, setValues] = useState({
     foodName: "",
@@ -22,22 +22,31 @@ export default function Form() {
       calorieCount: event.target.value,
     }));
   };
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    console.log("ss");
+  };
   return (
-    <form id="form1" onSubmit={() => console.log("Submitted")}>
+    <form id="form1" onSubmit={handleSubmit}>
       <Header>
-        <Input
-          id="calories"
+        <input
+          id="food-name"
+          required
+          className="input"
           placeholder="Food name"
           values={values.foodName}
           onChange={handleFoodNameChange}
-        ></Input>
-        <Input
+        ></input>
+        <input
           id="calories"
+          className="input"
           placeholder="Number of calories"
           type="Number"
+          required
           values={values.calorieCount}
           onChange={handleCalorieCounterChange}
-        ></Input>
+        ></input>
       </Header>
       <Button title="Add Item" form="form1"></Button>
     </form>
